@@ -21,7 +21,7 @@ underscore. It is used to prevent accidental reuse of variables or clashes.
 
 Name mangling sounds more complicated than it is. It is just the variable name with the class name and `_` prefixed to the front.
 
-mangled name: <span style="color: orange;">_</span> + <span style="color: orange;">class name</span> + <span style="color: orange;">__variable</span>  
+mangled name: <span style="color: orange;">_</span> + <span style="color: orange;">&lt;class name&gt;</span> + <span style="color: orange;">__variable</span>  
 
 
 In the example code, the __counter variable is prefixed by the name of the class. The Python interpreter will automatically
