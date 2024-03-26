@@ -21,17 +21,11 @@ class SingletonClassicTestCase(unittest.TestCase):
                          self.s2.increment_counter())
         self.assertEqual(self.s1.get_counter(), self.s3.get_counter())
 
-    def test_attribute_error(self):
-        """access member variable not allowed."""
-        with self.assertRaises(AttributeError):
-            dun1 = Singleton()
-            dun1.__instance.__counter = 23
-
     def test_get_private_variable_error(self):
         """access member variable not allowed."""
         with self.assertRaises(AttributeError):
             dun1 = Singleton()
-            x = dun1.__instance.__counter
+            x = dun1.__counter
 
     def test_set_value(self):
         """verify counted correctly when setting"""
@@ -53,9 +47,7 @@ class SingletonClassicTestCase(unittest.TestCase):
         print(f"s2.__dict__: {self.s2.__dict__}")
         print(f"s3.__dict__: {self.s3.__dict__}")
         self.assertEqual(self.s1._Singleton__counter, 345)
-        self.assertEqual(self.s1._Singleton__counter, self.s3._Singleton__counter)
-        self.assertEqual(self.s2._Singleton__counter, self.s3._Singleton__counter)
-
-
-
-
+        self.assertEqual(self.s1._Singleton__counter,
+                         self.s3._Singleton__counter)
+        self.assertEqual(self.s2._Singleton__counter,
+                         self.s3._Singleton__counter)

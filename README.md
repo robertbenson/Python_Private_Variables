@@ -41,14 +41,14 @@ Therefore, the new mangled name for the original variable name ___counter_ in cl
 The following unittest, correctly raises an AttributeError. 
 The variable name has been mangled by the Python interpreter and does not appear to the programmer in its originally typed form. 
 The name that the programmer is trying to access does not exist.
-The user may not access the variable and an error is raised, this is a desired feature.
+The user may not access the variable and an error is raised, this is a desired behaviour.
 
 ```python
         def test_get_private_variable_error(self):
         """access member variable not allowed."""
         with self.assertRaises(AttributeError):
             dun1 = Singleton()
-            x = dun1.__instance.__counter
+            x = dun1.__counter
 ```
 ### AttributeError can be avoided
 
