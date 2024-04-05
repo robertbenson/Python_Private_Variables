@@ -10,7 +10,7 @@ to make everything as hidden as possible. This can be achieved by using undersco
 `_foo`: Python convention says that this is to be treated as a private variable. There is no Python enforcement and it 
 works as a weak indicator. 
 
-`__foo`: This takes _privacy_ to the next level, name mangling will be, there will be Python enforcement and is therefore stronger.
+`__foo`: This takes _privacy_ to the next level, name mangling will be used, there will be Python enforcement and is therefore stronger.
 
 
 
