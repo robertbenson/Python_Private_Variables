@@ -7,10 +7,9 @@ A general guideline that helps produce better code, encapsulation, is
 to make everything as hidden as possible. This can be achieved by using underscores, single or double.
 ## Single Underscore & Double Underscores
 
-`_foo`: Python convention says that this is to be treated as a private variable. There is no Python enforcement and it 
-works as a weak indicator. 
+`_foo`: Python convention says that this is to be treated as a private variable. There is no Python enforcement and it is a weak indicator. 
 
-`__foo`: This takes _privacy_ to the next level, name mangling will be used, there will be Python enforcement and is therefore stronger.
+`__foo`: This takes _privacy_ to the next level, name mangling will be used, there will be Python enforcement and is therefore a stronger indicator.
 
 
 
