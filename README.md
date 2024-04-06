@@ -5,11 +5,21 @@
 Python does not have _true_ private variables. It does not enforce privacy in the way some other languages like Java or C++ do.  
 A general guideline that helps produce better code, encapsulation, is
 to make everything as hidden as possible. This can be achieved by using underscores, single or double.
-## Single Underscore & Double Underscores
+
+## Encapsulation
+
+Encapsulation is where data and the methods that work on data are within one unit. This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data.
+There are two ways this can be achieved using Python:
+
+
+### 1 Single Underscore
 
 `_foo`: Python convention says that this is to be treated as a private variable. There is no Python enforcement and it is a weak indicator. 
 
-`__foo`: This takes _privacy_ to the next level, name mangling will be used, there will be Python enforcement and is therefore a stronger indicator.
+### 2 Double Underscores
+`__foo`: This takes _privacy_ to the next level, name mangling will be used, there will be Python enforcement and is therefore stronger.
+The idea of a private attribute is to make it accessible within the class only, encapsulating the data. 
+
 
 
 
